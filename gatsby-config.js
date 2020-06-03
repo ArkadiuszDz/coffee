@@ -31,6 +31,16 @@ module.exports = {
         icon: `src/images/coffee-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+			resolve: 'gatsby-plugin-snipcart',
+			options: {
+        apiKey: process.env.SNIPCART_API,
+        // public api key for snipcart
+        // add this to .env.development or paste it directly here
+        // MmUwMzY0MTUtNTE2MC00ZGU3LTliYWEtNWNkNzFkZTFlNzQ1NjM3MjY4MTA4ODA1MjgxMDIw
+        autopop: true
+			}
+		},
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
